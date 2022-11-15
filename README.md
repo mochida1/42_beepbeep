@@ -63,9 +63,12 @@ Vale a pena lembrar que existem vários tipos de cartões no mercado, com protoc
 
 > Arquivos a serem entregues: *.c, *.h, *.md e qualquer outra coisa que não seja desnecessária.
 
-Criar um programa que recebe instruções do broker e as realiza. Vocês vão ter que criar um stub->mock->fake para isso (já podem aproveitar para fazer testes com ele).
+#### O serviço que vocês criarem deve:
+- Quando um cartão é aproximado, energizá-lo;
+- Mandar uma mensagem com o tipo de cartão para o broker;
 
 `man 2 ipc`
+- Receber instruções e retornar o resultado para o broker;
 
 flags;
 
