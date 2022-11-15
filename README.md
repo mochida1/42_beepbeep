@@ -80,10 +80,16 @@ O programa deve aceitar as seguintes flags quando rodado pela linha de comando:
 - `-d` ou `--daemon`: Roda o programa em forma de daemon ou não, dependendo de como for transformado em serviço;
 - `-v` ou `--verbose`: Tasca printf pra tudo quanto é lado para facilitar debugging;
 - `-l` ou `--log`: Mesma coisa que o -v, mas passa o output para um arquivo;
+- `-u` ou `--unittest`: Liga testes unitários (vocês podem fazer isso por uma diretriz de compilação se quiserem e botarem na documentação);
 
 A única flag que deve ser mantida como padrão é o `-h`, se explicitadas as outras dentro do help.
 
 Não é necessário fazer com que o programa entenda flags concatenadas, ex: `-dvl`, porém ele deve aceitar multiplas flags;
+
+#### Test Doubles & TDD
+Pensaram que era só um programa? HÁ! Pegadinha.
+
+Vocês vão ter que fazer outro programa pra testar o protocolo. Simples assim.
 
 ---
 
