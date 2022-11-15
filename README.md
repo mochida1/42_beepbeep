@@ -46,7 +46,7 @@ leitura, status do cartão ;
 
 pensar que a conexão é feita via wifi;
 
-[test dobules - fake broker;] (https://blog.onedaytesting.com.br/test-doubles/)
+[test doubles - fake broker;](https://blog.onedaytesting.com.br/test-doubles/)
 
 
 
