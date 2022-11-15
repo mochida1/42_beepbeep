@@ -39,7 +39,7 @@ Vocês estarão num time de quatro cadetes, cada um com níveis diferentes de ex
 Vocês deverão criar um programa em C que se comunica com um broker, enviando informações, recebendo instruções e as realizando. Vocês vão ter que criar um [stub->mock->fake](https://blog.onedaytesting.com.br/test-doubles/) para isso (já podem aproveitar para fazer testes com ele).
 O orangepi vai estar conectado à rede via wifi, e isso pode trazer problemas por parte do broker. Enquanto é fácil fazer com que o *[test double](https://blog.onedaytesting.com.br/test-doubles/)* funcione perfeitamente, é bem válido fazer testes de estresse caso hajam *delays* ou perda de informações no meio do caminho. "Tudo que é sólido se desmancha no ar". Por outro lado, isso nos dá a chance de usá-lo via ssh para compilação sem ter que necessariamente estar nele para codar - infelizmente pela nossa configuração de rede, daria muito mais trabalho usar nfs, então nos viramos com o que temos.
 
-Vale a pena lembrar que existem vários tipos de cartões no mercado, com protocolos de acesso diferentes entre si. Neste projetos utilizaremos apenas um tipo de cartão, porém o time deve se preocupar em deixar viável para possíveis expansões com tipos diferentes de tags NFC (a grande maioria utiliza o ISO 14443 como padrão)
+Vale a pena lembrar que existem vários tipos de cartões no mercado, com protocolos de acesso diferentes entre si. Neste projetos utilizaremos apenas um tipo de cartão, porém o time deve se preocupar em deixar viável para possíveis expansões com tipos diferentes de tags NFC (a grande maioria utiliza o ISO 14443 como padrão). Pra segurança de todos e evitar fraudes, não sabemos o que ou como o bocal irá botar dentro dos cartões.
 
 ---
 
@@ -64,9 +64,11 @@ Vale a pena lembrar que existem vários tipos de cartões no mercado, com protoc
 > Arquivos a serem entregues: *.c, *.h, *.md e qualquer outra coisa que não seja desnecessária.
 
 #### O serviço que vocês criarem deve:
+- Poder ser rodado pela linha de comando com as flags denotadas na proxima sessão;
 - Quando um cartão é aproximado, energizá-lo;
-- Mandar uma mensagem com o tipo de cartão para o broker;`man 2 ipc`
+- Mandar uma mensagem com o tipo de cartão para o broker; `man 2 ipc`
 - Receber instruções e retornar o resultado para o broker;
+- A cada operação, deverá ser mandada uma mensagem de log para o broker;
 
 flags;
 
