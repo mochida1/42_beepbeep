@@ -65,9 +65,7 @@ Vale a pena lembrar que existem vários tipos de cartões no mercado, com protoc
 
 #### O serviço que vocês criarem deve:
 - Quando um cartão é aproximado, energizá-lo;
-- Mandar uma mensagem com o tipo de cartão para o broker;
-
-`man 2 ipc`
+- Mandar uma mensagem com o tipo de cartão para o broker;`man 2 ipc`
 - Receber instruções e retornar o resultado para o broker;
 
 flags;
