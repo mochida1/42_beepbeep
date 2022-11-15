@@ -16,6 +16,7 @@ Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser
 - É terminantemente **proibido** guardar informações dos cadetes em memória não volátil;[^1]
 - Se o projeto vai mexer com hardware e periféricos, você provavelmente vai ter que estar no campus;
 - A norma não se aplica aqui. Isso não significa que você possa usar goto. Não use goto;
+- O código será aberto;
 - Voces **PODEM** (e provavelmente vão) usar as funções de libs que não são suas;
 - Voces podem usar globais. Isso não quer dizer que seja uma boa prática;
 - Lembre-se que outras pessoas podem ter que trabalhar em cima do seu código;
@@ -45,14 +46,19 @@ pensar que a conexão é feita via wifi;
 
 test dobules - fake broker;
 
-> - Computador: [Orange PI 3 LTS, 256mb ram](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/orange-pi-3-LTS.html)
-> - OS: Armbian 22.08 Jammy Kernel 5.15.y
-> - Leitor: [\[ACS\]ACR 122U](http://www.acs.com.hk/en/products/3/acr122u-usb-nfc-reader/)
 
 
 `man 7 daemon`
 
+---
 
+### Especificações técnicas
+
+> - Computador: [Orange PI 3 LTS, 256mb ram](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/orange-pi-3-LTS.html)
+> - OS: Armbian 22.08 Jammy Kernel 5.15.y //REVISAR
+> - Leitor: [\[ACS\]ACR 122U](http://www.acs.com.hk/en/products/3/acr122u-usb-nfc-reader/)
+> - Cartões:  ISO 14443-A com chip EEPROM 1K de memória
+> - [LibPCSC](https://github.com/LudovicRousseau/PCSC)
 ---
 
 ### Protocolo
