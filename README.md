@@ -31,27 +31,19 @@ Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser
 ---
 
 ### Overview
-times e atribuiçoes;
 
-flags;
-
-daemoninzação -> serviço;
-
-documentação necessária para o projeto;
-
-protocolo;
+Vocês estarão num time de quatro cadetes, cada um com níveis diferentes de experiência. Pensem como vão se organizar e tudo mais. As pessoas mais experientes provavelmente passarão menos tempo codando e mais tempo ajudando os outros e definindo estratégias e arquitetura.
 
 cartões diferentes;
 
-leitura, status do cartão ;
-
 pensar que a conexão é feita via wifi;
+
+
 
 [test doubles - fake broker;](https://blog.onedaytesting.com.br/test-doubles/)
 
 
 
-`man 7 daemon`
 
 ---
 
@@ -70,8 +62,19 @@ pensar que a conexão é feita via wifi;
 ---
 
 ### Parte Mandatória
-Criar um programa que recebe instruções do broker e as realiza. Vocês vão ter que criar um fake para isso (já podem aproveitar para fazer testes com ele).
+Criar um programa que recebe instruções do broker e as realiza. Vocês vão ter que criar um stub->mock->fake para isso (já podem aproveitar para fazer testes com ele).
 
+flags;
+
+daemoninzação -> serviço;
+`man 7 daemon`
+
+documentação necessária para o projeto;
+
+protocolo;
+
+
+leitura, status do cartão ;
 ---
 
 ### Parte Bonus
