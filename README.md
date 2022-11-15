@@ -41,14 +41,6 @@ O orangepi vai estar conectado à rede via wifi, e isso pode trazer problemas po
 
 Vale a pena lembrar que existem vários tipos de cartões no mercado, com protocolos de acesso diferentes entre si. Neste projetos utilizaremos apenas um tipo de cartão, porém o time deve se preocupar em deixar viável para possíveis expansões com tipos diferentes de tags NFC (a grande maioria utiliza o ISO 14443 como padrão)
 
-
-
-
-[test doubles - fake broker;]
-
-
-
-
 ---
 
 ### Especificações técnicas
@@ -86,8 +78,11 @@ documentação necessária para o projeto;
 
 protocolo;
 
-
 leitura, status do cartão ;
+
+botar para rodar como serviço na inicialização;
+
+`man 1 systemd`
 
 ---
 
@@ -106,6 +101,7 @@ Bonus extra: Deixar no jeito para no futuro poder ter compatibilidade com cartõ
 2. Roda?
 3. Apresenta leaks?
 4. Não apresenta crashes ou fechamentos inesperados?
+5. Se rebootado o sistema, o processo continua ativo?
 
 
 ---
