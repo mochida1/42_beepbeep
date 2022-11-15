@@ -23,6 +23,7 @@ Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser
 - Temos muita pouca memória ram, evite mallocs;[^2]
 - Ao contrário dos projetos habituais da 42, não teremos que lidar com valores absurdos;
 - Atenha-se ao protocolo de mensagens - se ainda não houver, documente-o;
+- Haverão leaks de alguns bytes na libpcsclite;
 - TDD, logs e documentaçaõ, fazenofavô;
 - Divirta-se, aprenda e ensine :)
 - Tente não brickar o OrangePI;[^3]
@@ -69,7 +70,7 @@ pensar que a conexão é feita via wifi;
 ---
 
 ### Parte Mandatória
-
+Criar um programa que recebe instruções do broker e as realiza. Vocês vão ter que criar um fake para isso (já podem aproveitar para fazer testes com ele).
 
 ---
 
