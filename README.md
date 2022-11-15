@@ -75,6 +75,9 @@ pensar que a conexão é feita via wifi;
 
 ### Parte Bonus
 
+Fazer um programa que lê de um arquivo, grava e valida todas as informações contidas nele num cartão.
+Bonus extra: Deixar no jeito para no futuro poder ter compatibilidade com cartões diferentes.
+
 ---
 
 
