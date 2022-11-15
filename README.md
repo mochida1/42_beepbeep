@@ -16,7 +16,7 @@ Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser
 - É terminantemente **proibido** guardar informações dos cadetes em memória não volátil;[^1]
 - Se o projeto vai mexer com hardware e periféricos, você provavelmente vai ter que estar no campus;
 - A norma não se aplica aqui. Isso não significa que você possa usar goto. Não use goto;
-- O código será aberto;
+- O código será aberto, pense no que isso implica;
 - Voces **PODEM** (e provavelmente vão) usar as funções de libs que não são suas;
 - Voces podem usar globais. Isso não quer dizer que seja uma boa prática;
 - Lembre-se que outras pessoas podem ter que trabalhar em cima do seu código;
