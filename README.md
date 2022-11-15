@@ -58,7 +58,7 @@ test dobules - fake broker;
 > - OS: Armbian 22.08 Jammy Kernel 5.15.y //REVISAR
 > - Leitor: [\[ACS\]ACR 122U](http://www.acs.com.hk/en/products/3/acr122u-usb-nfc-reader/)
 > - Cartões:  ISO 14443-A com chip EEPROM 1K de memória
-> - [PSCSLite](https://pcsclite.apdu.fr/): [Repo](https://github.com/LudovicRousseau/PCSC)
+> - PSCSLite: [Site](https://pcsclite.apdu.fr/) - [Repo](https://github.com/LudovicRousseau/PCSC)
 ---
 
 ### Protocolo
