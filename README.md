@@ -32,11 +32,15 @@ Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser
 
 ### Overview
 
+Antes de tudo: este é um projeto bem simples para padrões 42. A parte difícil é ter que lidar com uma lib cuja documentação é praticamente inexistente (pior que a MLX) e setar o ambiente de desenvolvimento (que já foi feito) ;)
+
 Vocês estarão num time de quatro cadetes, cada um com níveis diferentes de experiência. Pensem como vão se organizar e tudo mais. As pessoas mais experientes provavelmente passarão menos tempo codando e mais tempo ajudando os outros e definindo estratégias e arquitetura.
 
-cartões diferentes;
+Vocês deverão criar um programa que se comunica com um broker, enviando informações, recebendo instruções e as realizando. Vocês vão ter que criar um stub->mock->fake para isso (já podem aproveitar para fazer testes com ele).
+O orangepi vai estar conectado à rede via wifi, e isso pode trazer problemas por parte do broker. Enquanto é fácil fazer com que o *test double* funcione perfeitamente, é bem válido fazer testes de estresse caso hajam *delays* ou perda de informações no meio do caminho. "Tudo que é sólido se desmancha no ar".
 
-pensar que a conexão é feita via wifi;
+Vale a pena lembrar que existem vários tipos de cartões no mercado, com protocolos de acesso diferentes entre si. Neste projetos utilizaremos apenas um tipo de cartão, porém o time deve se preocupar em deixar viável para possíveis expansões com tipos diferentes de tags NFC (a grande maioria utiliza o ISO 14443 como padrão)
+
 
 
 
@@ -62,6 +66,7 @@ pensar que a conexão é feita via wifi;
 ---
 
 ### Parte Mandatória
+
 > Funções externas permitidas: As que vocês forem usar :)
 
 Criar um programa que recebe instruções do broker e as realiza. Vocês vão ter que criar um stub->mock->fake para isso (já podem aproveitar para fazer testes com ele).
@@ -69,6 +74,7 @@ Criar um programa que recebe instruções do broker e as realiza. Vocês vão te
 flags;
 
 daemoninzação -> serviço;
+
 `man 7 daemon`
 
 documentação necessária para o projeto;
@@ -77,6 +83,7 @@ protocolo;
 
 
 leitura, status do cartão ;
+
 ---
 
 ### Parte Bonus
