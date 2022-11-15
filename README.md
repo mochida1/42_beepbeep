@@ -81,7 +81,7 @@ O programa deve aceitar as seguintes flags quando rodado pela linha de comando:
 - `-v` ou `--verbose`: Tasca printf pra tudo quanto é lado para facilitar debugging;
 - `-l` ou `--log`: Mesma coisa que o -v, mas passa o output para um arquivo;
 
-A única flag que deve ser mantida como padrão é o -h, se explicitadas as outras dentro do help.
+A única flag que deve ser mantida como padrão é o `-h`, se explicitadas as outras dentro do help.
 
 Não é necessário fazer com que o programa entenda flags concatenadas, ex: `-dvl`, porém ele deve aceitar multiplas flags;
 
