@@ -110,6 +110,25 @@ Bonus extra: Deixar no jeito para no futuro poder ter compatibilidade com cartõ
 4. Não apresenta crashes ou fechamentos inesperados?
 5. Se rebootado o sistema, o processo continua ativo?
 
+#### Validação de argumentos
+
+1. Rode o programa sem argumentos, funciona?
+2. Funciona com -h?
+3. Funciona com --help?
+4. Funciona com as flags descritas no -h?
+5. Funciona com todas as flags no -h juntas?
+6. Sai com erro caso seja um argumento não descrito no -h?
+7. Dá bom quando passa uma salada de argumentos (ie: argumentos duplicados)?
+
+#### Validação de cartão
+Com o programa desligado,
+1. passe um cartão perto, acende?
+2. tire o cartão, apaga?
+3. passe o bilhete unico ou qualquer outro dispositivo NFC diferente perto, apita erro?
+Repita com o programa ligado.
+
+
+
 
 ---
 
