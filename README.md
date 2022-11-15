@@ -45,6 +45,8 @@ pensar que a conexão é feita via wifi;
 
 test dobules - fake broker;
 
+\[ACS\]ACR 122U
+
 `man 7 daemon`
 
 
