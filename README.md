@@ -32,7 +32,7 @@ Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser
 
 ### Overview
 
-Antes de tudo: este é um projeto bem simples para padrões 42. A parte difícil é ter que lidar com uma lib cuja documentação é praticamente inexistente (pior que a MLX) e setar o ambiente de desenvolvimento (que já foi feito) ;)
+Antes de tudo: este é um projeto bem simples para padrões 42. A parte difícil é ter que lidar com uma lib cuja documentação é praticamente inexistente (pior que a MLX) e setar o ambiente de desenvolvimento (que já foi feito - pelo menos dentro do orangepi). ;)
 
 Vocês estarão num time de quatro cadetes, cada um com níveis diferentes de experiência. Pensem como vão se organizar e tudo mais. As pessoas mais experientes provavelmente passarão menos tempo codando e mais tempo ajudando os outros e definindo estratégias e arquitetura.
 
@@ -40,6 +40,8 @@ Vocês deverão criar um programa em C que se comunica com um broker, enviando i
 O orangepi vai estar conectado à rede via wifi, e isso pode trazer problemas por parte do broker. Enquanto é fácil fazer com que o *[test double](https://blog.onedaytesting.com.br/test-doubles/)* funcione perfeitamente, é bem válido fazer testes de estresse caso hajam *delays* ou perda de informações no meio do caminho. "Tudo que é sólido se desmancha no ar". Por outro lado, isso nos dá a chance de usá-lo via ssh para compilação sem ter que necessariamente estar nele para codar - infelizmente pela nossa configuração de rede, daria muito mais trabalho usar nfs, então nos viramos com o que temos.
 
 Vale a pena lembrar que existem vários tipos de cartões no mercado, com protocolos de acesso diferentes entre si. Neste projetos utilizaremos apenas um tipo de cartão, porém o time deve se preocupar em deixar viável para possíveis expansões com tipos diferentes de tags NFC (a grande maioria utiliza o ISO 14443 como padrão). Pra segurança de todos e evitar fraudes, não sabemos o que ou como o bocal irá botar dentro dos cartões.
+
+Toda a documentação necessária está dentro do diretorio DOCS. A documentação da libPCSC não existe, então vão ter que procurar dentro dos headers :S
 
 ---
 
@@ -61,7 +63,7 @@ Vale a pena lembrar que existem vários tipos de cartões no mercado, com protoc
 
 > Funções externas permitidas: As que vocês forem usar :)
 
-> Arquivos a serem entregues: *.c, *.h, *.md e qualquer outra coisa que não seja desnecessária.
+> Arquivos a serem entregues: Makefile (ou CMake equivalente), *.c, *.h, *.md e qualquer outra coisa que não seja desnecessária.
 
 #### O programa que vocês criarem deve:
 - Poder ser rodado pela linha de comando com as flags denotadas na proxima sessão;
@@ -79,7 +81,7 @@ O programa deve aceitar as seguintes flags quando rodado pela linha de comando:
 - `-h` ou `--help`: Demonstra como usar o programa;
 - `-d` ou `--daemon`: Roda o programa em forma de daemon ou não, dependendo de como for transformado em serviço;
 - `-v` ou `--verbose`: Tasca printf pra tudo quanto é lado para facilitar debugging;
-- `-l` ou `--log`: Mesma coisa que o -v, mas passa o output para um arquivo;
+- `-l` ou `--log`: Mesma coisa que o -v, mas passa o output para um arquivo; `man 3 fprintf`
 - `-u` ou `--unittest`: Liga testes unitários (vocês podem fazer isso por uma diretriz de compilação se quiserem e botarem na documentação);
 
 A única flag que deve ser mantida como padrão é o `-h`, se explicitadas as outras dentro do help.
@@ -90,6 +92,8 @@ Não é necessário fazer com que o programa entenda flags concatenadas, ex: `-d
 Pensaram que era só um programa? HÁ! Pegadinha.
 
 Vocês vão ter que fazer outro programa pra testar o protocolo. Simples assim.
+
+E aproveitando que vão estar com a mão na massa, já botem bateladas de testes nesse rolê.
 
 ---
 
@@ -127,6 +131,19 @@ Com o programa desligado,
 3. passe o bilhete unico ou qualquer outro dispositivo NFC diferente perto, apita erro?
 Repita com o programa ligado.
 
+#### testes de rotina
+1. Apresente um cartão, faça um pedido para o broker ler e validar todos os campos;
+2. Peça para o fake broker gravar e validar alguns campos;
+3. Grave senhas (fáceis e diferentes de 0x000..) no bloco 4. Remova o cartão, valide as senhas e tente acessar os dados dos blocos 1-3;
+4. Crie um bloco de valor, mexa nele, teste coisas normais, incrementos, decrementos, underflows e overflows podem acontecer, veja se o grupo foi realmente legal de mandar uma mensagem de aviso para o log indicando-os;
+5. Peça para o fake broker fazer vários comandos e retire o cartão antes do término das operações (você provavelmente vai ter que mandar um BEEP de alguns segundos). O que acontece está de acordo com o esperado?
+
+#### Testes escabrosos
+1. Tente rodar 2 instâncias do programa. Ele reclama?
+2. Desligue o broker e tente rodar o programa, ele reclama?
+3. Com o programa funcionando, aproxime um cartão válido e desligue o broker, o comportamento é consistente com o esperado?
+4. Crie duas instâncias do fake do broker. O programa lida bem com esse comportamento totalmente desnecessário e errado?
+5. O programa eventualmente limpa a fila de mensagens caso o broker esteja desligado? Avisa?
 
 
 
