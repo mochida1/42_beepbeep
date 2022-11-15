@@ -63,18 +63,22 @@ Vale a pena lembrar que existem vários tipos de cartões no mercado, com protoc
 
 > Arquivos a serem entregues: *.c, *.h, *.md e qualquer outra coisa que não seja desnecessária.
 
-#### O serviço que vocês criarem deve:
+#### O programa que vocês criarem deve:
 - Poder ser rodado pela linha de comando com as flags denotadas na proxima sessão;
+- Ser um serviço inicializado automaticamente no boot; `man 1 sytemd`
 - Quando um cartão é aproximado, energizá-lo;
 - Mandar uma mensagem com o tipo de cartão para o broker; `man 2 ipc`
-- Receber instruções e retornar o resultado para o broker;
+- Enquanto o cartçaõ estiver energizado, receber instruções e retornar o resultado para o broker;
+- Caso o cartão seja removido, fazer com que o broker saiba disso com prioridade;
 - A cada operação, deverá ser mandada uma mensagem de log para o broker;
+- Fazer BEEP BEEP nas horas certas, com BEEPS e cores intuitivas (beeps são isentos de log);
+- Ser daemonizável; `man 7 daemon`
 
 flags;
 
 daemoninzação -> serviço;
 
-`man 7 daemon`
+
 
 
 documentação necessária para o projeto;
