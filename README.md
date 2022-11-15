@@ -36,15 +36,15 @@ Antes de tudo: este é um projeto bem simples para padrões 42. A parte difícil
 
 Vocês estarão num time de quatro cadetes, cada um com níveis diferentes de experiência. Pensem como vão se organizar e tudo mais. As pessoas mais experientes provavelmente passarão menos tempo codando e mais tempo ajudando os outros e definindo estratégias e arquitetura.
 
-Vocês deverão criar um programa que se comunica com um broker, enviando informações, recebendo instruções e as realizando. Vocês vão ter que criar um stub->mock->fake para isso (já podem aproveitar para fazer testes com ele).
-O orangepi vai estar conectado à rede via wifi, e isso pode trazer problemas por parte do broker. Enquanto é fácil fazer com que o *test double* funcione perfeitamente, é bem válido fazer testes de estresse caso hajam *delays* ou perda de informações no meio do caminho. "Tudo que é sólido se desmancha no ar". Por outro lado, isso nos dá a chance de usá-lo via ssh para compilação sem ter que necessariamente estar nele para codar - infelizmente pela nossa configuração de rede, daria muito mais trabalho usar nfs, então nos viramos com o que temos.
+Vocês deverão criar um programa em C que se comunica com um broker, enviando informações, recebendo instruções e as realizando. Vocês vão ter que criar um stub->mock->fake para isso (já podem aproveitar para fazer testes com ele).
+O orangepi vai estar conectado à rede via wifi, e isso pode trazer problemas por parte do broker. Enquanto é fácil fazer com que o *[test double](https://blog.onedaytesting.com.br/test-doubles/)* funcione perfeitamente, é bem válido fazer testes de estresse caso hajam *delays* ou perda de informações no meio do caminho. "Tudo que é sólido se desmancha no ar". Por outro lado, isso nos dá a chance de usá-lo via ssh para compilação sem ter que necessariamente estar nele para codar - infelizmente pela nossa configuração de rede, daria muito mais trabalho usar nfs, então nos viramos com o que temos.
 
 Vale a pena lembrar que existem vários tipos de cartões no mercado, com protocolos de acesso diferentes entre si. Neste projetos utilizaremos apenas um tipo de cartão, porém o time deve se preocupar em deixar viável para possíveis expansões com tipos diferentes de tags NFC (a grande maioria utiliza o ISO 14443 como padrão)
 
 
 
 
-[test doubles - fake broker;](https://blog.onedaytesting.com.br/test-doubles/)
+[test doubles - fake broker;]
 
 
 
@@ -69,13 +69,18 @@ Vale a pena lembrar que existem vários tipos de cartões no mercado, com protoc
 
 > Funções externas permitidas: As que vocês forem usar :)
 
+> Arquivos a serem entregues: *.c, *.h, *.md e qualquer outra coisa que não seja desnecessária.
+
 Criar um programa que recebe instruções do broker e as realiza. Vocês vão ter que criar um stub->mock->fake para isso (já podem aproveitar para fazer testes com ele).
+
+`man 2 ipc`
 
 flags;
 
 daemoninzação -> serviço;
 
 `man 7 daemon`
+
 
 documentação necessária para o projeto;
 
@@ -93,14 +98,14 @@ Bonus extra: Deixar no jeito para no futuro poder ter compatibilidade com cartõ
 
 ---
 
-### Régua
+### Régua // Se sim, bom.
 
 #### Testes Ridículos
 
 1. O programa compila?
 2. Roda?
 3. Apresenta leaks?
-
+4. Não apresenta crashes ou fechamentos inesperados?
 
 
 ---
