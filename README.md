@@ -62,6 +62,7 @@ pensar que a conexão é feita via wifi;
 ---
 
 ### Parte Mandatória
+> Funções externas permitidas: As que vocês forem usar :)
 Criar um programa que recebe instruções do broker e as realiza. Vocês vão ter que criar um stub->mock->fake para isso (já podem aproveitar para fazer testes com ele).
 
 flags;
