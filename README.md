@@ -45,7 +45,10 @@ pensar que a conexão é feita via wifi;
 
 test dobules - fake broker;
 
-\[ACS\]ACR 122U
+> Computador: [Orange PI 3 LTS, 256mb ram](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/orange-pi-3-LTS.html)
+> OS: Armbian 22.08 Jammy Kernel 5.15.y
+> Leitor: [\[ACS\]ACR 122U](http://www.acs.com.hk/en/products/3/acr122u-usb-nfc-reader/)
+
 
 `man 7 daemon`
 
@@ -69,4 +72,4 @@ test dobules - fake broker;
 
 [^1]: Por motivos de segurança.
 [^2]: Para evitar a fragmentação da RAM em múltiplas páginas de memória e mater a performance boa.
-[^3]: Não brinque com a EEPROM.
+[^3]: Não brinque com a flash nativa.
