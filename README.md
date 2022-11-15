@@ -100,7 +100,10 @@ E aproveitando que vão estar com a mão na massa, já botem bateladas de testes
 ### Parte Bonus
 
 Fazer um programa que lê de um arquivo, grava e valida todas as informações contidas nele num cartão.
+
 Bonus extra: Deixar no jeito para no futuro poder ter compatibilidade com cartões diferentes.
+
+Bonus extra extra: Fazer o programa mudar os dados de dentro do cartão, por um template, para outro template.
 
 ---
 
@@ -144,8 +147,6 @@ Repita com o programa ligado.
 3. Com o programa funcionando, aproxime um cartão válido e desligue o broker, o comportamento é consistente com o esperado?
 4. Crie duas instâncias do fake do broker. O programa lida bem com esse comportamento totalmente desnecessário e errado?
 5. O programa eventualmente limpa a fila de mensagens caso o broker esteja desligado? Avisa?
-
-
 
 ---
 
