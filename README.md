@@ -1,18 +1,18 @@
-# 42 BEEP BEEP {#title}
+# 42 BEEP BEEP
 ## BEEP!
 
-### Sumário {#summary}
+### Sumário
 Este projeto tem como objetivo criar um serviço que lê cartões NFC, comunicando-se por IPC com um broker.
 
 ---
 
-### Introdução {#intro}
+### Introdução
 Ter que ficar logando nos computadores do campus para registrar horas na casa é um pé no saco. Vamos tentar resolver esse BO.
 Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser conhecimento. E possivelmente um cartão NFC que usamos de teste para guardar de lembrança.
 
 ---
 
-### Instruções e Regras Gerais {#generalrules}
+### Instruções e Regras Gerais
 - É terminantemente **proibido** guardar informações dos cadetes em memória não volátil;[^1]
 - Se o projeto vai mexer com hardware e periféricos, você provavelmente vai ter que estar no campus;
 - A norma não se aplica aqui. Isso não significa que você possa usar goto. Não use goto;
@@ -29,7 +29,7 @@ Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser
 
 ---
 
-### Overview {#overview}
+### Overview
 flags;
 
 daemoninzação -> serviço;
@@ -52,7 +52,7 @@ test dobules - fake broker;
 
 ---
 
-### Especificações técnicas {#techspec}
+### Especificações técnicas
 
 > - Computador: [Orange PI 3 LTS, 256mb ram](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/orange-pi-3-LTS.html)
 > - OS: Armbian 22.08 Jammy Kernel 5.15.y //REVISAR
@@ -61,17 +61,17 @@ test dobules - fake broker;
 > - PSCSLite: [Site](https://pcsclite.apdu.fr/) - [Repo](https://github.com/LudovicRousseau/PCSC)
 ---
 
-### Protocolo {#protocol}
+### Protocolo
 ```Aqui definiremos o protocolo para que evitar erros na mensageria.```
 
 ---
 
-### Parte Mandatória {#mandatory}
+### Parte Mandatória
 
 
 ---
 
-### Parte Bonus {#bonus}
+### Parte Bonus
 
 ---
 
