@@ -30,6 +30,8 @@ Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser
 ---
 
 ### Overview
+times e atribuiçoes;
+
 flags;
 
 daemoninzação -> serviço;
@@ -44,7 +46,7 @@ leitura, status do cartão ;
 
 pensar que a conexão é feita via wifi;
 
-test dobules - fake broker;
+[test dobules - fake broker;] (https://blog.onedaytesting.com.br/test-doubles/)
 
 
 
