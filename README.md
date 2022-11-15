@@ -148,6 +148,9 @@ Repita com o programa ligado.
 4. Crie duas instâncias do fake do broker. O programa lida bem com esse comportamento totalmente desnecessário e errado?
 5. O programa eventualmente limpa a fila de mensagens caso o broker esteja desligado? Avisa?
 
+#### Testes extras
+1. O que você achar que valha a pena testar.
+
 ---
 
 
