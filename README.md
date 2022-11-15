@@ -116,6 +116,7 @@ Bonus extra extra: Fazer o programa mudar os dados de dentro do cartão, por um 
 3. Apresenta leaks?
 4. Não apresenta crashes ou fechamentos inesperados?
 5. Se rebootado o sistema, o processo continua ativo?
+6. Cheque a documentação, ela existe?
 
 #### Validação de argumentos
 
