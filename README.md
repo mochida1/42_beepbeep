@@ -13,13 +13,13 @@ Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser
 ---
 
 ### Instruções e Regras Gerais
-- É terminantemente **proibido** guardar informações dos cadetes em memória não volátil;
+- É terminantemente **proibido** guardar informações dos cadetes[^1] em memória não volátil;
 - Se o projeto vai mexer com hardware e periféricos, você provavelmente vai ter que estar no campus;
 - A norma não se aplica aqui. Isso não significa que você possa usar goto. Não use goto;
 - Voces **PODEM** (e provavelmente vão) usar as funções de libs que não são suas;
 - Voces podem usar globais. Isso não quer dizer que seja uma boa prática;
 - Lembre-se que outras pessoas podem ter que trabalhar em cima do seu código;
-- Temos muita pouca memória ram, evite mallocs;
+- Temos muita pouca memória ram, evite mallocs[^2];
 - Ao contrário dos projetos habituais da 42, não teremos que lidar com valores absurdos;
 - Atenha-se ao protocolo de mensagens;
 - TDD, logs e documentaçaõ, fazenofavô;
@@ -30,8 +30,11 @@ Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser
 
 ### Overview
 flags;
+
 daemoninzação -> serviço;
+
 documentação necessária para o projeto;
+
 protocolo;
 
 
@@ -50,3 +53,7 @@ protocolo;
 ### Parte Bonus
 
 ---
+
+
+[^1]: Por motivos de segurança.
+[^2]: Para evitar a fragmentação da RAM em múltiplas páginas de memória e mater a performance boa.
