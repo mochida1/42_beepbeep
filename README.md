@@ -112,7 +112,7 @@ Bonus extra extra: Fazer o programa mudar os dados de dentro do cartão, por um 
 
 ---
 
-### Régua // Se sim, bom.
+### Régua (aberta sem -42) // Se sim, bom.
 
 #### Testes Ridículos
 
