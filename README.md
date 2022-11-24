@@ -79,6 +79,7 @@ Toda a documentação necessária está dentro do diretorio DOCS. A documentaç�
 - A cada operação, deverá ser mandada uma mensagem de log para o broker;
 - Fazer BEEP BEEP nas horas certas, com BEEPS e cores intuitivas (beeps são isentos de log);
 - Ser daemonizável; `man 7 daemon`
+- BEEPBEEP é um nome para placeholder. Fica à critério do grupo batizar o filho ;)
 
 #### Flags
 O programa deve aceitar as seguintes flags quando rodado pela linha de comando:
