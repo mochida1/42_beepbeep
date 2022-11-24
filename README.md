@@ -79,7 +79,7 @@ Toda a documentação necessária está dentro do diretorio DOCS. A documentaç�
 - A cada operação, deverá ser mandada uma mensagem de log para o broker;
 - Fazer BEEP BEEP nas horas certas, com BEEPS e cores intuitivas (beeps são isentos de log);
 - Ser daemonizável; `man 7 daemon`
-- BEEPBEEP é um nome para placeholder. Fica à critério do grupo batizar o filho como quiserem ;)
+- BEEPBEEP é um nome para placeholder. Fica à critério do grupo batizar o filho como quiserem ;)[^4]
 
 #### Flags
 O programa deve aceitar as seguintes flags quando rodado pela linha de comando:
@@ -96,7 +96,7 @@ Não é necessário fazer com que o programa entenda flags concatenadas, ex: `-d
 #### Test Doubles & TDD
 Pensaram que era só um programa? HÁ! Pegadinha.
 
-Vocês vão ter que fazer outro programa pra testar o protocolo. Simples assim.
+Vocês vão ter que fazer outro programa pra testar o protocolo. O programa deve ser implementado como interface, uma vez que o pessoal do bocal, ou terceiros que queiram utilizar o código possam modificá-lo com facilidade.
 
 E aproveitando que vão estar com a mão na massa, já botem bateladas de testes nesse rolê.
 
@@ -159,7 +159,13 @@ Repita com o programa ligado.
 
 ---
 
+### Critérios de aceite
+1. O programa deve funcionar em conjunto com um prototipo do broker;
+2. O código deve estar bem escrito;
+3. Deve haver documentação sobre a implementação.
+
 
 [^1]: Por motivos de segurança.
 [^2]: Para evitar a fragmentação da RAM em múltiplas páginas de memória e mater a performance boa.
 [^3]: Não brinque com a flash nativa.
+[^4]: "Patterns in C 1.pdf" pode vir a calhar :)
