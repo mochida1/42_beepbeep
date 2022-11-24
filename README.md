@@ -160,9 +160,10 @@ Repita com o programa ligado.
 ---
 
 ### Critérios de aceite
-1. O programa deve funcionar em conjunto com um prototipo do broker;
-2. O código deve estar bem escrito;
-3. Deve haver documentação sobre a implementação.
+1. Os integrantes devem ter se divertido e saído pessoas melhores do que antes;
+2. O programa deve funcionar em conjunto com um prototipo do broker;
+3. O código deve estar bem escrito;
+4. Deve haver documentação sobre a implementação.
 
 
 [^1]: Por motivos de segurança.
