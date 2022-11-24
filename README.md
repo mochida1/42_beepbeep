@@ -10,6 +10,10 @@ Este projeto tem como objetivo criar um serviço que lê cartões NFC, comunican
 Ter que ficar logando nos computadores do campus para registrar horas na casa é um pé no saco. Vamos tentar resolver esse BO.
 Por favor leve em conta que a única coisa que estaremos adquirindo aqui vai ser conhecimento. E possivelmente um cartão NFC que usamos de teste para guardar de lembrança.
 
+**Note que este é nosso primeiro projeto colaborativo, provavelmente teremos falhas no processo em alguns pontos, mas como cadetes maneiros, daremos jeitos nessas lombadas**
+
+E isso provavelmente vai tornar a coisa mais legal do que funcionando tudo perfeitamente :)
+
 ---
 
 ### Instruções e Regras Gerais
