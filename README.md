@@ -59,7 +59,14 @@ Toda a documentação necessária está dentro do diretorio DOCS. A documentaç�
 ---
 
 ### Protocolo
-```Aqui definiremos o protocolo para que evitar erros na mensageria.```
+
+```Aqui definiremos o protocolo para evitar erros na mensageria.```
+
+Enviar mensagem via HTTP, método POST, para host com uma chave de autorização, ambos definidos durante a compilação.
+
+Exemplo de compilação com parâmetros externos
+
+`gcc -DENDPOINT="localhost" -DAUTH_TOKEN="chave_bruxaria" ...`
 
 ---
 
