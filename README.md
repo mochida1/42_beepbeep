@@ -2,7 +2,7 @@
 ## BEEP!
 
 ### Sumário
-Este projeto tem como objetivo criar um serviço que lê cartões NFC, comunicando-se por IPC com um broker.
+Este projeto tem como objetivo criar um serviço que lê cartões NFC, comunicando-se com um broker.
 
 ---
 
@@ -21,6 +21,7 @@ E isso provavelmente vai tornar a coisa mais legal do que funcionando tudo perfe
 - Se o projeto vai mexer com hardware e periféricos, você provavelmente vai ter que estar no campus;
 - A norma não se aplica aqui. Isso não significa que você possa usar goto. Não use goto;
 - O código será aberto, pense no que isso implica;
+- O escopo do projeto pode variar. Se o grupo conseguir implementar uma solução melhor do que a sugerida, não há problemas. Caso o time não consiga implementar uma solução suficientemente boa no prazo, o prazo pode se extender.
 - Voces **PODEM** (e provavelmente vão) usar as funções de libs que não são suas;
 - Voces podem usar globais. Isso não quer dizer que seja uma boa prática;
 - Lembre-se que outras pessoas podem ter que trabalhar em cima do seu código;
@@ -115,7 +116,7 @@ Fazer um programa que lê de um arquivo, grava e valida todas as informações c
 
 Bonus extra: Deixar no jeito para no futuro poder ter compatibilidade com cartões diferentes.
 
-Bonus extra extra: Fazer o programa mudar os dados de dentro do cartão, por um template, para outro template.
+Bonus extra extra: Fazer um programa para mudar os dados de dentro do cartão, por um template, para outro template.
 
 ---
 
